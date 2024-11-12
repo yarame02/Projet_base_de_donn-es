@@ -55,40 +55,40 @@ login_frame.grid_propagate(False)
 
 # Titre "Login"
 title_font = font.Font(family="Helvetica", size=32, weight="bold")
-title_label = tk.Label(login_frame, text="Login", font=title_font, bg="white")
+title_label = tk.Label(login_frame, text="connexion", font=title_font, bg="white")
 title_label.grid(row=0, column=0, pady=(30, 10), sticky="w", padx=60)
 
 # Champs Email et Mot de passe
-email_label = tk.Label(login_frame, text="Email Address", bg="white", font=('Helvetica', 14))
+email_label = tk.Label(login_frame, text="Email", bg="white", font=('Helvetica', 14))
 email_label.grid(row=1, column=0, padx=60, pady=(10, 0), sticky="w")
 user = tk.Entry(login_frame, width=30, font=('Helvetica', 14))
 user.grid(row=2, column=0, padx=60, pady=5)
 
-password_label = tk.Label(login_frame, text="Password", bg="white", font=('Helvetica', 14))
+password_label = tk.Label(login_frame, text="Mot de passe", bg="white", font=('Helvetica', 14))
 password_label.grid(row=3, column=0, padx=60, pady=(10, 0), sticky="w")
 code = tk.Entry(login_frame, show="*", width=30, font=('Helvetica', 14))
 code.grid(row=4, column=0, padx=60, pady=5)
 
 # Lien "Forgot Password?"
-forgot_label = tk.Label(login_frame, text="Forgot Password?", fg="blue", bg="white", font=('Helvetica', 12), cursor="hand2")
+forgot_label = tk.Label(login_frame, text="Mot de passe oublié?", relief="ridge" ,fg="blue", bg="white", font=('Helvetica', 12), cursor="hand2")
 forgot_label.grid(row=5, column=0, padx=60, pady=(5, 20), sticky="w")
 
 # Bouton de connexion
-login_button = tk.Button(login_frame, text="LOGIN", bg="blue", fg="white", width=20, font=('Helvetica', 14), command=connect)
+login_button = tk.Button(login_frame, text="CONNEXION", bg="blue", fg="white", width=20, font=('Helvetica', 14), command=connect)
 login_button.grid(row=6, column=0, padx=60, pady=10)
 
 # Options de connexion avec des services externes
-or_label = tk.Label(login_frame, text="Or sign up with", bg="white", font=('Helvetica', 14))
+or_label = tk.Label(login_frame, text="Se connecter avec", bg="white", font=('Helvetica', 14))
 or_label.grid(row=7, column=0, padx=60, pady=(20, 5))
 
 # Boutons de connexion via Google, Apple, Microsoft
-google_button = tk.Button(login_frame, text="Sign in with Google", width=25, bg="white", anchor="w", font=('Helvetica', 12))
+google_button = tk.Button(login_frame, text="Se connecter avec google", width=25, bg="white", anchor="w", font=('Helvetica', 12))
 google_button.grid(row=8, column=0, padx=60, pady=2)
 
-apple_button = tk.Button(login_frame, text="Sign in with Apple", width=25, bg="white", anchor="w", font=('Helvetica', 12))
+apple_button = tk.Button(login_frame, text="Se connecter avec Apple", width=25, bg="white", anchor="w", font=('Helvetica', 12))
 apple_button.grid(row=9, column=0, padx=60, pady=2)
 
-microsoft_button = tk.Button(login_frame, text="Sign in with Microsoft", width=25, bg="white", anchor="w", font=('Helvetica', 12))
+microsoft_button = tk.Button(login_frame, text="Se connecter avec Microsoft", width=25, bg="white", anchor="w", font=('Helvetica', 12))
 microsoft_button.grid(row=10, column=0, padx=60, pady=2)
 
 # Démarrer la boucle principale
